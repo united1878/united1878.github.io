@@ -51,7 +51,55 @@ header {
 	text-indent: -9999px;
 	overflow: hidden;
 }
+.hdd{
+	text-indent:-9999px; /* 들여쓰기 화면에서는 없어지지만 시각장애인을 위한 스크린리더를 위해 만듦 */
+	position: absolute;
+}
+.openMOgnb span{
+	box-sizing: border-box; /* 박스 크기를 지정하는 조건. 박스 크기에 border을 합함 */
+	display : block;
+	width: 25px; height:3px;
+	margin-bottom: 4px;
+	border-radius: 10px;
+	background: #fff;
+
+}
+.openMOgnb span + span {width:17px;} /*두번째꺼 짧게 하기*/
+.openMOgnb span:last-child {width:25px; margin-bottom: 0px;} /*세번째꺼 길게 되돌리기*/
+
+.header_cont {
+	float:none;
+	width:100%;
+	background-color: #31353d;
+	display:block;
+}
+.closePop {
+	display: block;
+	position: absolute;
+	right:0;
+	top:15px;
+}
+.closePop a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	overflow: hidden; /* 클 때 넘치지 않게 */
+	background: url(img/btn_closeMenu.png) no-repeat;
+	background-size: 60px;
+
+}
 /* //로고영역 */
+
+/* //상단메뉴영역 */
+.openMOgnb{
+	display: block;
+	position: absolute; 
+	left:15px;
+	top:35px;
+	width:25px;
+	height:16px;
+}
 
 /* //헤더영역 */
 /* //모바일영역 */
