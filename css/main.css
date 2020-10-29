@@ -194,5 +194,120 @@ header {
   /*홀수번째 li에*/
   border-right: solid 1px #84868b;
 }
+/* 본문 컨테이너 영역*/
+#container,
+#footer,
+.hdd,
+.quick_area {
+  text-align: center;
+}
+#container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.main_rolling_pc {
+  display: none;
+} /* pc 슬라이드 영역 */
+
+/* 모바일 슬라이드 영역 */
+.main_rolling_mobile {
+  display: block;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  margin: 0 3px !important;
+  background-color: white !important;
+  opacity: 0.2 !important; /* 기본 투명도 */
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+} /* 활성화 된 bullet의 투명도 */
+
+/* 갤러리 최근 게시물 영역 */
+
+.about_area h2 {
+  padding: 27px 0 25px;
+  font-size: 20px;
+}
+.about_area h2 b {
+  padding-top: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.about_box {
+  background-color: white;
+}
+.place_list li {
+  float: none; /* 플로트가 있을지도 모르니 none 처리*/
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
+}
+.place_list li img {
+  width: 100%;
+}
+
+.place_list li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.place_list p.txt {
+  /* txt라는 클래식 형태의 p태그 */
+  padding: 10px 50px 30px;
+  line-height: 1.4;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  word-break: keep-all; /* 단어가 끊기지 않게 줄맞춤 */
+  color: #666;
+}
+
+.place_list .view {
+  border-top: #333 solid 2px;
+  box-sizing: border-box;
+  margin: 0 0 30px;
+  display: inline-block;
+  padding-top: 5px;
+  color: #666;
+}
+
+/* 공지사항최근게시물영역 */
+.app_line {
+  display: none;
+}
+.appbbs_area {
+  padding: 0 20px;
+  text-align: left;
+}
+.bbs_line {
+  float: none; /*그냥 무의식적으로 하면 됨*/
+  width: 100%;
+  padding: 20px 0;
+  border-top: solid 1px #d6d7d8;
+}
+.bbs_line h3 {
+  font-weight: bold;
+  font-size: 19px;
+}
+.bbsline .notice_recent {
+  padding-top: 10px;
+}
+.bbs_line .notice_recent li {
+  padding: 8px 0;
+  list-style: circle;
+}
+/* //갤러리 최근 게시물 영역 */
+
+/* //본문 컨테이너 영역 */
+
 /* //헤더영역 */
 /* //모바일 영역 */
