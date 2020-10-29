@@ -5,6 +5,14 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 20201029(목)
+
+- j쿼리 : 네이티브 자바스크립트 단축키워드로 사용.
+- j쿼리 코어를
+- 자바스크립트 콜백함수 : (아래)
+  - 이름이 없는 함수
+  - 기본함수는 이름은 호출해야지 실행이 되지만, 콜백 함수는 호출 없이 실행됨.
+- nav태그 : html5에 추가된 태그
+- ul(unorder list)태그 > li (list)태그
 - 네이밍 규칙 : 카멜표기(낙타등)
 - 사각형 영역 크기 : box-sizing : border
 - 웹접근성 : 시각장애인들을 위한 코딩추가
@@ -16,7 +24,7 @@
 
 - z-index: 주), 0부터 시작 , 화면에는 레이어라는 개념으로 처리(포토피아)
 - CSS스타일 적용하는 3가지 방법
-- 1. 인라인스타일: 태그안쪽에 style속성사용(아래) 
+- 1. 인라인스타일: 태그안쪽에 style속성사용(아래)
 - 예) style="padding:10px;"
 - 2. 파일안에 style태그사용(아래)
 - 예) <style>내부스타일 주기</style>
@@ -25,9 +33,9 @@
 - 깃허브 README.md(마크다운 언어)
 - meta데이터: 데이터의 데이터임.(콘텐츠를 설명하는 데이터).
 - 메타태그중 viewport는 반응형사이트에서 필수.
-- 반응형사이트 화면설계서_학생용 구글ppt 다운받기(아래 구글링크):
+- 반응형사이트 화면설계서\_학생용 구글ppt 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/17jXgf7R2BawMt3K9eoxfnnO_8X9yClLZ/view?usp=sharing
-- 반응형사이트 기획서_학생용 구글xlsx 다운받기(아래 구글링크):
+- 반응형사이트 기획서\_학생용 구글xlsx 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/1dC2RMqDqNeEFtr-r-dvcsKk0YwPjk0Xy/view?usp=sharing
 
 #### 20201022(목)
@@ -40,8 +48,7 @@
 
 #### 20201019(월)
 
-- 반응형사이트 화면설계서_교사용 구글ppt 다운받기(아래 구글링크):
+- 반응형사이트 화면설계서\_교사용 구글ppt 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/1GqBK_sKPFpfhTDd4whbLK3ZLXP1g3_Kw/view?usp=sharing
-- 반응형사이트 기획서_교사용 구글xlsx 다운받기(아래 구글링크):
+- 반응형사이트 기획서\_교사용 구글xlsx 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/1Wjuov4TCQjqBtCu5EbUc3SNns8PaxHSX/view?usp=sharing
-
