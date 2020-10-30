@@ -112,8 +112,6 @@
     line-height: 550px;
     background-size: cover;
     width: 100%;
-    position: relative;
-    z-index: 50;
   }
 
   .roll_content a img {
@@ -122,13 +120,23 @@
   } /* 밑쪽 스크롤 바 없애기 */
 
   li.imglist0 {
-    background: url(./img/maple.jpg) no-repeat;
+    position: relative;
+    z-index: 50;
+    background: url(../img/maple.jpg) no-repeat;
   }
   .imglist1 {
-    background: url(./img/img_slidecontents02.png) no-repeat;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    background: url(../img/img_slidecontents02.png) no-repeat;
   }
   .imglist2 {
-    background: url(./img/img_slidecontents03.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background: url(../img/img_slidecontents03.png) no-repeat;
   }
   .rolll_content {
     position: relative;
