@@ -1,2 +1,85 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* 모든 종류의 미디어를 스타일 지정 최소 화면이 801px이상부터 적용 */
+@media all and (min-width: 801px) {
+  header {
+    height: 113px;
+  }
+  .header_area h1 {
+    float: left;
+    padding: 25px 0 0;
+    padding-left: 20px;
+    width: initial; /* 모바일버전에서 지정해놓은 속성을 초기화 */
+    height: initial;
+    text-align: initial;
+  }
+  .header_area h1 a {
+    display: block;
+    width: 270px;
+    height: 71px;
+    background-size: initial !important;
+  }
+  .openMOgnb {
+    display: none;
+  }
+  .header_cont {
+    display: block;
+    float: right;
+    width: 60%;
+    padding-right: 20px;
+    background: none;
+  }
+  .closePop {
+    display: none;
+  }
+  /* //상단로고와 메뉴스타일 */
+}
+.util {
+  padding: 0px;
+  text-align: right;
+  padding-top: 10px;
+}
+.util li {
+  float: none;
+  display: inline;
+}
+.util li::after {
+  color: white;
+}
+.util li a {
+  font-size: 14px;
+}
+.gnb {
+  float: right;
+  padding-top: 5px;
+  height: initial;
+  border-top: none;
+}
+.gnb li {
+  width: initial;
+  text-align: initial;
+  border-bottom: none;
+}
+.gnb li:nth-child(2n + 1) {
+  border: none;
+}
+.gnb li a {
+  padding: 26px 25px;
+  font-size: 18px;
+  height: inherit;
+  background: none;
+}
+.gnb li + li a {
+  background: none;
+}
+.gnb li + li + li a {
+  background: none;
+}
+.gnb li + li + li + li a {
+  background: none;
+}
+.gnb li:last-child a {
+  padding-right: 0px;
+}
+/* //태블릿영역 */
