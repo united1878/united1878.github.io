@@ -34,52 +34,139 @@
     display: none;
   }
   /* //상단로고와 메뉴스타일 */
+
+  .util {
+    padding: 0px;
+    text-align: right;
+    padding-top: 10px;
+  }
+  .util li {
+    float: none;
+    display: inline;
+  }
+  .util li::after {
+    color: white;
+  }
+  .util li a {
+    font-size: 14px;
+  }
+  .gnb {
+    float: right;
+    padding-top: 5px;
+    height: initial;
+    border-top: none;
+  }
+  .gnb li {
+    width: initial;
+    text-align: initial;
+    border-bottom: none;
+  }
+  .gnb li:nth-child(2n + 1) {
+    border: none;
+  }
+  .gnb li a {
+    padding: 26px 25px;
+    font-size: 18px;
+    height: inherit;
+    background: none;
+  }
+  .gnb li + li a {
+    background: none;
+  }
+  .gnb li + li + li a {
+    background: none;
+  }
+  .gnb li + li + li + li a {
+    background: none;
+  }
+  .gnb li:last-child a {
+    padding-right: 0px;
+  }
+  /* 컨테이너영역 */
+
+  #container {
+    padding-bottom: 20px;
+    width: initial;
+    position: initial;
+  }
+
+  /* //컨테이너영역 */
+  /* 슬라이드영역 */
+  .main_rolling_mobile {
+    display: none;
+  }
+  .main_rolling_pc {
+    display: block;
+  }
+  .visualRoll {
+    position: relative;
+    width: 100%;
+  }
+  .viewImgList {
+    position: relative;
+    width: 100%;
+  }
+  ul.viewImgList li {
+    text-align: center;
+    height: 550px;
+    line-height: 550px;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 50;
+  }
+
+  .roll_content a img {
+    display: none;
+    width: 100%;
+  } /* 밑쪽 스크롤 바 없애기 */
+
+  li.imglist0 {
+    background: url(./img/maple.jpg) no-repeat;
+  }
+  .imglist1 {
+    background: url(./img/img_slidecontents02.png) no-repeat;
+  }
+  .imglist2 {
+    background: url(./img/img_slidecontents03.png) no-repeat;
+  }
+  .rolll_content {
+    position: relative;
+  }
+  .roll_content .roll_txtline {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .rollbtnArea {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 25px;
+    z-index: 200;
+  }
+  .rollingbtn {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .rollingbtn li.butt0 {
+    margin-left: 10px;
+  }
+  .rollingbtn li {
+    display: inline;
+    margin-left: 5px;
+  }
+  .rollingbtn li a {
+    vertical-align: top;
+  }
+  /* //슬라이드영역 */
+
+  /* //태블릿영역 */
 }
-.util {
-  padding: 0px;
-  text-align: right;
-  padding-top: 10px;
-}
-.util li {
-  float: none;
-  display: inline;
-}
-.util li::after {
-  color: white;
-}
-.util li a {
-  font-size: 14px;
-}
-.gnb {
-  float: right;
-  padding-top: 5px;
-  height: initial;
-  border-top: none;
-}
-.gnb li {
-  width: initial;
-  text-align: initial;
-  border-bottom: none;
-}
-.gnb li:nth-child(2n + 1) {
-  border: none;
-}
-.gnb li a {
-  padding: 26px 25px;
-  font-size: 18px;
-  height: inherit;
-  background: none;
-}
-.gnb li + li a {
-  background: none;
-}
-.gnb li + li + li a {
-  background: none;
-}
-.gnb li + li + li + li a {
-  background: none;
-}
-.gnb li:last-child a {
-  padding-right: 0px;
-}
-/* //태블릿영역 */
