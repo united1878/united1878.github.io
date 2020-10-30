@@ -312,16 +312,6 @@ header {
 
 /* //모바일영역 */
 
-.to_top .s_point {
-  background: url(./img/ico_totop_mo.png) no-repeat;
-  background-size: 45px 45px;
-  display: inline;
-  float: right;
-  width: 45px;
-  height: 45px;
-  text-indent: -9999px;
-}
-
 /* 푸터영역 */
 footer {
   border-top: 1px solid #ddd;
@@ -401,5 +391,98 @@ footer {
   background-image: url(../img/ico_instargram_r.png);
 }
 /* //푸터영역 */
+/* 퀵메뉴 영역 */
+.to_top {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  text-align: center;
+  background: none;
+  z-index: 100; /* 어떤 이미지보다 더 위에 있어야 하기 때문에. 레이어 기능을 함 */
+}
+.to_top a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-left: none;
+  border-bottom: none;
+  background: url(../img/ico_totop_mo.png) no-repeat center;
+  background-size: 45px;
+  text-indent: -9999px;
+}
+
+.quick_list {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #3a3e46;
+}
+
+.quick_list li {
+  float: left;
+  width: 31%;
+  text-align: left;
+  background: #3a3e46;
+  font-size: 15px;
+}
+.quick_list li:first-child::after {
+  content: "|";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  position: absolute;
+  right: 31%; /* 포지션때문에 필요 */
+  top: 50%;
+  margin-top: -8px;
+  background: #76787e;
+}
+
+.quick_list li a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+}
+.quick_list li a p {
+  display: none;
+}
+.quick_list li a h3 {
+  height: 37px;
+  line-height: 37px;
+  padding-bottom: 0px;
+  padding-left: 45px;
+  background: url(../img/ico_phone_mobtm.png) no-repeat 20px center;
+  background-size: 20px;
+  color: #fff;
+  letter-spacing: -1px; /*글자사이간격*/
+}
+.quick_list li + li {
+  width: 37%;
+}
+.quick_list li + li + li {
+  width: 32%;
+}
+.quick_list li + li a h3 {
+  background: url(../img/ico_katalk_mobtm.png) no-repeat 20px center;
+  background-size: 20px;
+}
+.quick_list li + li + li a h3 {
+  background: url(../img/ico_contact_mobtm.png) no-repeat 20px center;
+  background-size: 20px;
+}
+
+.quick_list li:last-child::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  margin-top: -8px;
+  background: #76787e;
+}
+
+/* //퀵메뉴영역 */
 
 /* //모바일 영역 */

@@ -13,4 +13,7 @@ $(document).ready(function () {
     $(".header_cont").slideUp("fast");
   });
   //header 아이디 영역 백그라운드 추가
+
+  // 상단으로 바로가기 to top
+  $(".s_point").smoothScroll();
 });
