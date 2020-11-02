@@ -6,6 +6,9 @@
 
 #### 20201102(월)
 
+- 자바스크립트 : 조건문 안에 !Ok = not Ok = false = not true
+- &&==and == x, || == or == +
+- 컴퓨터 0,1
 - Rest API : Representation 화면처리 api(앱인터페이스)
 - 원시데이터(raw데이터-공공데이터) 앱 인터페이스(APInputOutput)에서 받아서,
   재가공해 화면에 뿌려주는 작업 (마스크앱, 코로나19 환자 정보, sns로그인)
