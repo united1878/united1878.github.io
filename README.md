@@ -6,6 +6,15 @@
 
 #### 20201103(화)
 
+-시만텍 웹 : 의미 있는 태그 사용 == html5 사용
+
+- header, footer, article, aside 웹문서에 의미있는 영역 지정
+- white-space : nowrap : 예)아래
+  - 마지막 교시 입
+  - 니다.
+- 만약에 wrap이라면 (아래)
+  - 마지막 교시
+  - 입니다.
 - css 값 3개일때, padding (위 좌우 아래)
   -vertical(수직-세로) : top, middle, bottom
   -horizental(수평-가로) : left, right, center
