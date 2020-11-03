@@ -6,6 +6,17 @@
 
 #### 20201103(화)
 
+- css 값 3개일때, padding (위 좌우 아래)
+  -vertical(수직-세로) : top, middle, bottom
+  -horizental(수평-가로) : left, right, center
+  -table th(table header), td(table data), table tr(table row 가로줄)
+
+-유효성 검사 : 예전에는 자바스크립트 처리 -유효성검사 : 현재는 html 속성으로 처리
+
+- <form> 태그 속성 2가지 중요
+  - action 속성 :데이터 전송 위치
+  - method 속성 : 데이터 전송 방법(아래)
+  - get(비보안- epdlxjshcnf), post(보안)
 - 게시판리스트 : 모바일용 작업
 - 모바일용 -> 태블릿용 -> pc용
 

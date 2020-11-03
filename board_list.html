@@ -13,22 +13,163 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery.smooth-scroll.min.js"></script>
 <script src="js/main.js"></script>
-
 <style>
+/* 메인 상단 위치표시 영역 */
 
-
-
-
-@media all and (min-width: 1066px) {
-  /* pc용 스타일 */
-
-  /* //pc용스타일 */
+.location_area {
+	height: 260px;
+	background: url(./img/img_top2.jpg) no-repeat center;
+}
+.tit_page{
+	padding: 140px 0 0 0;
+	margin: 0px 45px;
+	border-bottom: 1px solid #ccc;
+	font: 30px 'Arial Narrow';
+	color: white;
+	letter-spacing: 3px;
+	text-align: left;
+}
+.location{display: none;}
+ul.page_menu {
+	padding:10px 0 0 45px;
+	display: block;
+}
+ul.page_menu li {
+	float: left;
+	padding-bottom: 10px;
+}
+ul.page_menu li a.on{
+	border-bottom: 1px solid white;
+	color:white;
+	background: none;
+}
+ul.page_menu li a {
+	display: block;
+	margin-right: 20px;
+	font-size: 15px;
+	color: #ddd;
+}
+.tit_page .in {
+	font-variant: small-caps;
 }
 
+/* //메인 상단 위치표시 영역 */
+
+/* 게시판 리스트 본문영역 */
+.bodytext_area{
+	box-sizing: border-box;
+	padding: 0;
+}
+.minisrch_form{
+	width: 100%;
+	text-align: right;
+	margin-bottom: 20px;
+}
+.minisrch_form .tbox{
+	padding: 0 5px 0 30px;
+	width: 200px;
+	height: 35px;
+	line-height: 35px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	background: url(./img/ico_search.png) no-repeat 10px 50%;
+	background-size: 15px;
+}
+.btn_srch {
+	display: inline-block;
+	width: 70px;
+	text-align: center;
+	height: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	vertical-align:middle;
+	background-color: #384d75;
+	color:white !important;
+}
+.minisrch_form legend{
+	text-indent: -9999px;
+	font-size: 0px;
+}
+input::placeholder{
+	color: #999;
+}
+.bbsListTbl {
+	width: 100%;
+	border-top: 2px solid #384d75;
+}
+.bbsListTbl th:nth-child(1){display: none;}
+.bbsListTbl th:nth-child(2){width: 70%;}
+.bbsListTbl th:nth-child(3){display: none;}
+.bbsListTbl th:nth-child(4){width: 30%;}
+
+.bbsListTbl th {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding: 0;
+	height: 45px;
+	background: #f2f4fa;
+}
+.bbsListTbl td:nth-child(1){display:none;}
+.bbsListTbl td:nth-child(3){display: none;}
+
+.bbsListTbl td{
+	text-align: center;
+	line-height: 1.3;
+	border-bottom: 1px solid #ccc;
+}
+.bbsListTbl td:nth-child(2){
+	text-align: left;
+}
+.bbsListTbl th, .bbsListTbl td{
+	padding: 10px;
+	box-sizing: border-box;
+	height: 45px;
+}
+.pagination{
+	padding: 40px 0px;
+}
+.pagination a.pbtn{
+	display: inline-block;
+	padding: 7px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0px;
+}
+.pagination a{
+	display: inline-block;
+}
+.pagination a .currentpage{
+	border-radius: 3px;
+	background: #384d75;
+	color: white;
+}
+.pagination a .pagenum{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+/* //게시판 리스트 본문 영역 */
 </style>
+<script>
+$(document).ready(function() {
+	//라이브러리 사용 안하고 오리지널 j쿼리로 유효성검사
+	$("#search_form").submit(function(){
+		// search_form. submit이 발생했을 때 (검색 버튼을 클릭했을 때=전송했을 때)
+		var search_keyword = $("input[name=search_keyword]").val();
+		if(search_keyword==""){
+			alert("검색어는 한 글자 이상 입력해주세요.");
+			return false; //조건이 맞으면 전송 중지. return false가 없으면 alert 후 전송이 돼버림.
+		}
+	});
+});
+</script>
 </head>
 <body>
-	
 <!-- 헤더에서푸터까지 -->
 <div id="wrap">
 	<!-- 헤더상단메뉴영역영역 -->
@@ -92,8 +233,6 @@
 	
 	<!-- 메인콘텐츠영역 -->
 	<div id="container">
-			<!-- 메인콘텐츠영역 -->
-	<div id="container">
 		<!-- 메인상단위치표시영역 -->
 		<div class="location_area customer">
 			<div class="box_inner">
@@ -110,11 +249,13 @@
 		<!-- 메인본문영역 -->
 		<div class="bodytext_area box_inner">
 			<!-- 검색폼영역 -->
-			<form action="#" class="minisrch_form">
+			<!-- form에 name 필수 -->
+			<form id="search_form" name="search_form" action="board_list.html" class="minisrch_form">
 				<fieldset>
 					<legend>검색</legend>
-					<input type="text" class="tbox" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요">
-					<a href="javascript:;" class="btn_srch">검색</a>
+					<!-- 이름이 있어야 검색이 된다. 그래야 값을 보낼 수 있다. name 전에 required -->
+					<input name="search_keyword" type="text" class="tbox" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요">
+					<button class="btn_srch" class="btn_srch">검색</button>
 				</fieldset>
 			</form>
 			<!-- //검색폼영역 -->
@@ -194,11 +335,28 @@
 				</tbody>
 			</table>
 			<!-- //게시물리스트영역 -->
+			
+			<!-- 페이징처리영역 -->
+			<div class="pagination">
+				<a href="javascript:;" class="firstpage  pbtn"><img src="img/btn_firstpage.png" alt="첫 페이지로 이동"></a>
+				<a href="javascript:;" class="prevpage  pbtn"><img src="img/btn_prevpage.png" alt="이전 페이지로 이동"></a>
+				<a href="javascript:;"><span class="pagenum currentpage">1</span></a>
+				<a href="javascript:;"><span class="pagenum">2</span></a>
+				<a href="javascript:;"><span class="pagenum">3</span></a>
+				<a href="javascript:;"><span class="pagenum">4</span></a>
+				<a href="javascript:;"><span class="pagenum">5</span></a>
+				<a href="javascript:;" class="nextpage  pbtn"><img src="img/btn_nextpage.png" alt="다음 페이지로 이동"></a>
+				<a href="javascript:;" class="lastpage  pbtn"><img src="img/btn_lastpage.png" alt="마지막 페이지로 이동"></a>
+			</div>
+			<!-- //페이징처리영역 -->
+			<p class="btn_line">
+				<a href="board_write.html" class="btn_baseColor">등록</a>
+			</p>
+		</div>
+		<!-- //메인본문영역 -->
 	</div>
 	<!-- //메이콘텐츠영역 -->
-	
 	<!-- 푸터메뉴및사업자정보영역 -->
-
 	<footer>
 		<div class="foot_area box_inner">
 			<ul class="foot_list clear">
@@ -234,21 +392,6 @@
 	<p class="to_top"><a href="#wrap" class="s_point">TOP</a></p>
 </div>
 <!-- //하단퀵메뉴영역 -->
-
-<!-- 슬라이드스크립트영역 -->
-<script type="text/javascript" src="js/swiper.min.js"></script>
-<script type="text/javascript">
-   $(document).ready(function(){
-		var swiper = new Swiper('.swiper-container', {
-			loop: true,
-			autoplay:5500,
-		    autoplayDisableOnInteraction: false,
-			pagination: '.swiper-pagination',
-            paginationClickable: true
-		});
-	});
-</script>
-<!-- //슬라이드스크립트영역 -->
 
 </body>
 </html>
