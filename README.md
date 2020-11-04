@@ -4,7 +4,20 @@
 - 파이어폭스 개발자도구의 스타일 탭사용
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
-#### 20201103(화) 
+#### 20201104(수)
+
+- 테이블 display:none->block
+- 테이블 display: none -> table-cell 처리
+- 크로스브라우징 처리
+- 브라우저 IE11, Chrome, FireFox, Opera
+- 브라우저 교차 검사 후 처리.
+- display : revert IE11(윈7) 지원하지 않기 때문에
+- display : table-cell 로 처리
+- width : initial; IE11(윈7) 지원하지 않기 때문에
+- width : inherit; 로 처리해야함
+
+#### 20201103(화)
+
 - 시만텍 웹: 의미있는 태그사용 == html5사용
 - header, footer, article, aside 웹문서에 의미있는 영역 지정.
 - <div id="header">...</div>
@@ -33,6 +46,7 @@
 - 모바일용 -> 태블릿용 -> PC용
 
 #### 부트스트랩4.x버전
+
 - J쿼리기반 자바스크립트 프레임웍
 - 프레임워크: 라이브러리를 구조화시킨것.
 - 그리드시스템: 화면레이아웃 구조
@@ -40,6 +54,7 @@
 - AdminLTE 프레임웍(부트스트랩기반)
 
 #### 20201102(월)
+
 - 커스터마이징(기존 템플릿 수정).
 - 자바스크립트: 조건문안에 아래 내용은 동일
 - !Ok = not Ok = false = !true
@@ -49,7 +64,7 @@
 - 1 || 0 == 1 + 0 = 1 = or 1개만만족해도 참true
 - Rest API: Representation 화면처리 API(앱인터페이스).
 - 원시데이터(Raw데이터-공공데이터) 앱인터페이스(APInputOutput)에서 받어서, 재가공해서 화면에 뿌려주는 작업
-(마스크앱, 코로나19환자정보, SNS로그인)
+  (마스크앱, 코로나19환자정보, SNS로그인)
 - 토큰: 네트워크로 전송되는 조각 데이터.
 - 토큰: OAuth2.0인증데이터(SNS로그인)
 - 람다식(코드생략:애로우함수): ->(자바), =>(자바스크립트)
@@ -63,19 +78,23 @@
 - 3. console.log('디버그값출력');
 
 #### 2000만원이상 프로젝트에서 진행순서
+
 - 1. 클라이언트(공개입찰올림):
-- 요구사항명세서(*RFP)
+- 요구사항명세서(\*RFP)
 - 2. 개발사(업체):위 RFP를 보고 제안서제출
 - 3. 클라이언트(낙찰): 업체선정.
 - 4. 작업시작: 개발사작업시작.
 
 #### 취업 IT개발회사기준: 법인(주식회사)중소기업
+
 (사원:10명내외, 연매출액:10억내외)
+
 - 개발팀(제안서작성)
 - 디자인팀(제안서작성)
 - 기획팀(제안서제출)
 
 #### 20201030(금)
+
 - background-size: cover 속성은 영역보다 이미지가 작을때 작동.
 - inherit : 상속(extends)
 - @media all => screen + print + ...
@@ -91,6 +110,7 @@
 - Delete(자료삭제)
 
 #### 20201029(목)
+
 - bbs(PC통신부터 게시판약자 bbs) board system.
 - img는 가로크기를 지정하면, 세로크기는 자동으로 조정.
 - j쿼리: 네이티브 자바스크립트 단축키워드로 사용.
@@ -106,11 +126,13 @@
 - 웹접근성: 시각장애인들을 위한 코딩추가.
 - 스크린리더 프로그램용 코딩: 예, text-indent: -9999px;
 - 햄버거메뉴: .openMOgnb -> gnb(global navigation) 글로벌 네비게이션(전체 메뉴)
-Ps. Page Navigation (페이징 링크 처리)
+  Ps. Page Navigation (페이징 링크 처리)
+
 #### 20201028(수)
+
 - z-index: 주), 0부터 시작 , 화면에는 레이어라는 개념으로 처리(포토피아)
 - CSS스타일 적용하는 3가지 방법
-- 1. 인라인스타일: 태그안쪽에 style속성사용(아래) 
+- 1. 인라인스타일: 태그안쪽에 style속성사용(아래)
 - 예) style="padding:10px;"
 - 2. 파일안에 style태그사용(아래)
 - 예) <style>내부스타일 주기</style>
@@ -119,12 +141,13 @@ Ps. Page Navigation (페이징 링크 처리)
 - 깃허브 README.md(마크다운 언어)
 - meta데이터: 데이터의 데이터임.(콘텐츠를 설명하는 데이터).
 - 메타태그중 viewport는 반응형사이트에서 필수.
-- 반응형사이트 화면설계서_학생용 구글ppt 다운받기(아래 구글링크):
+- 반응형사이트 화면설계서\_학생용 구글ppt 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/17jXgf7R2BawMt3K9eoxfnnO_8X9yClLZ/view?usp=sharing
-- 반응형사이트 기획서_학생용 구글xlsx 다운받기(아래 구글링크):
+- 반응형사이트 기획서\_학생용 구글xlsx 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/1dC2RMqDqNeEFtr-r-dvcsKk0YwPjk0Xy/view?usp=sharing
 
 #### 20201022(목)
+
 - 소스내용 교육용으로 정리
 - 깃 사용시 토큰인증헤제: [윈도우 자격증명관리]에 personal access token 을 삭제 후 커밋
 - 강사블로그 http://blog.daum.net/web_design 에서 익스텐션으로 검색 vscode 사용법 참조.
@@ -133,7 +156,7 @@ Ps. Page Navigation (페이징 링크 처리)
 
 #### 20201019(월)
 
-- 반응형사이트 화면설계서_교사용 구글ppt 다운받기(아래 구글링크):
+- 반응형사이트 화면설계서\_교사용 구글ppt 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/1GqBK_sKPFpfhTDd4whbLK3ZLXP1g3_Kw/view?usp=sharing
-- 반응형사이트 기획서_교사용 구글xlsx 다운받기(아래 구글링크):
+- 반응형사이트 기획서\_교사용 구글xlsx 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/1Wjuov4TCQjqBtCu5EbUc3SNns8PaxHSX/view?usp=sharing
