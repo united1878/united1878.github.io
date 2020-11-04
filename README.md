@@ -6,6 +6,7 @@
 
 #### 20201104(수)
 
+- placeholder : -ms-input-placeholder 속성 크로스브라우징 처리 ok
 - 메인페이지 로고와 슬라이드(모바일용/pc용) 이미지 교체
 - 테이블 display:none->block
 - 테이블 display: none -> table-cell 처리
