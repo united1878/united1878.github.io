@@ -8,7 +8,7 @@
   padding: 140px 0 0 0;
   margin: 0 45px;
   border-bottom: 1px solid #ccc;
-  font: 30px 'Arial Narrow';
+  font: 30px "Arial Narrow";
   color: #fff;
   letter-spacing: 3px;
   text-align: left;
@@ -232,8 +232,7 @@ input::placeholder {
   text-align: left;
 }
 .pilsoo_item::before {
-  top: 1px;
-  content: '*';
+  content: "*";
   display: inline-block;
   position: absolute;
   left: 5px;
@@ -260,6 +259,7 @@ input::placeholder {
   border-bottom: 1px solid #ccc;
 }
 .app_list li .tit_lbl {
+  line-height: 50px;
   float: none;
   line-height: 30px;
   position: relative;
