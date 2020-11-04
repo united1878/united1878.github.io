@@ -79,6 +79,7 @@ ul.page_menu li a {
 input::placeholder {
   color: #999;
 }
+
 .bbsListTbl {
   width: 100%;
   border-top: 2px solid #384d75;
@@ -379,6 +380,15 @@ input::placeholder {
   .near_list li h4.next {
     background-image: url(./img/ico_nearPrev.png);
   }
+
   /* //태블릿+PC용 게시판뷰 */
+
+  /* ie에서 placeholder 색깔 */
+  textarea:-ms-input-placeholder {
+    color: #999;
+  }
+  input:-ms-input-placeholder {
+    columns: #999;
+  }
 }
 /* //게시판 글보기 영역 */
