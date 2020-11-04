@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @media all and (min-width: 1066px) {
-  /* pc용 스타일 */
-  /* 상단 로고, 메뉴 영역 */
+  /* PC영역 */
+  /* 상단 로고,메뉴영역 */
   .header_area h1 {
-    padding-left: 0;
+    padding-left: 0px;
   }
   .header_cont {
     width: 769px;
@@ -19,9 +19,8 @@
     width: 100%;
     background: rgba(250, 100, 0, 0.85);
     z-index: 100;
-    /* display: block; 서브메뉴 확인용*/
+    /* display: block; 서브메뉴 확인용 */
   }
-
   .gnb_depth2_1 .submenu_list {
     padding-left: 480px;
   }
@@ -40,25 +39,30 @@
     margin: 0 auto;
     text-align: left;
   }
-  /* //상단 로고, 메뉴 영역 */
-  /* 갤러리, 공지사항 최근게시물 영역 */
-
+  /* //상단 로고,메뉴영역 */
+  /* 겔러리, 공지사항 최근게시물 영역 */
   .place_list {
-    padding: 0;
+    padding: 0px;
   }
   .appbbs_box {
-    padding: 0;
+    padding: 0px;
   }
   .app_line a,
   .app_line a + a {
     text-align: center;
     background-position: 20px 50%;
   }
-  /* //갤러리, 공지사항 최근게시물 영역 */
+  .app_line {
+    width: 66%;
+  }
+  .bbs_line {
+    width: 32%;
+  }
+  /* //겔러리, 공지사항 최근게시물 영역 */
   /* 푸터영역 */
   .foot_area {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .foot_area .snslink {
     top: 50px;
@@ -67,24 +71,24 @@
     margin-left: 60px;
   }
   /* //푸터영역 */
-
-  /* 퀵메뉴 */
+  /* 퀵메뉴영역 */
   .quick_area {
     position: fixed;
     top: 171px;
-    right: 0px;
+    right: 0;
     width: 94px;
     z-index: 100;
   }
   .quick_list {
     display: inherit;
-    position: initial;
-    left: initial;
-    width: initial;
+    position: inherit;
+    left: inherit;
+    width: inherit;
+    bottom: inherit;
   }
   .quick_list li {
     float: none;
-    width: initial;
+    width: auto;
     text-align: center;
   }
   .quick_list li a {
@@ -95,16 +99,13 @@
     border-top: none;
   }
   .quick_list li + li {
-    width: initial;
+    width: auto;
   }
   .quick_list li + li + li {
-    width: initial;
+    width: auto;
   }
   .quick_list li + li + li + li {
-    width: initial;
-  }
-  .quick_list li:first-child::after {
-    content: none;
+    width: auto;
   }
   .quick_list li:last-child::before {
     content: none;
@@ -116,9 +117,9 @@
     padding-bottom: 10px;
     color: #ddd;
     letter-spacing: -2px;
-    height: initial;
-    line-height: initial;
-    padding-left: initial;
+    height: inherit;
+    line-height: inherit;
+    padding-left: inherit;
     background: none;
   }
   .quick_list li + li a h3 {
@@ -131,17 +132,18 @@
     display: inherit;
     line-height: 1.3;
     font-size: 12px;
-    color: white;
+    color: #fff;
   }
   .to_top {
-    position: inherit; /*fixed -> relative*/
-    right: initial;
-    bottom: initial;
-    background: white;
+    position: inherit; /* fixed -> relative */
+    right: inherit;
+    bottom: inherit;
+    background: #fff;
+    top: 359px;
   }
   .to_top a {
     display: block;
-    width: 94px;
+    width: 94.5px;
     box-sizing: border-box;
     text-indent: -9999px;
     overflow: hidden;
@@ -151,8 +153,8 @@
     background-size: 50%;
   }
   .to_contact {
-    padding-bottom: 0 !important;
+    padding-bottom: 0px !important;
   }
-  /* //퀵메뉴 */
-  /* //pc용스타일 */
-} ;
+  /* //퀵메뉴영역 */
+  /* //PC영역 */
+}

@@ -18,13 +18,12 @@
 </style>
 <script>
 $(document).ready(function() {
-	//라이브러리 사용 안하고 오리지널 j쿼리로 유효성검사
-	$("#search_form").submit(function(){
-		// search_form. submit이 발생했을 때 (검색 버튼을 클릭했을 때=전송했을 때)
+	//라이브러리 사용않하고, 오리지널 j쿼리로 만드는 유효성(아래)
+	$("#search_form").submit(function(){ //검색버튼을 클릭=전송했을때.
 		var search_keyword = $("input[name=search_keyword]").val();
-		if(search_keyword==""){
-			alert("검색어는 한 글자 이상 입력해주세요.");
-			return false; //조건이 맞으면 전송 중지. return false가 없으면 alert 후 전송이 돼버림.
+		if(search_keyword == "") {
+			alert("검색어는 빈 값으로 검색할 수 없습니다.!");
+			return false;//조건이 맞으면, 전송중지.
 		}
 	});
 });
@@ -110,13 +109,11 @@ $(document).ready(function() {
 		<!-- 메인본문영역 -->
 		<div class="bodytext_area box_inner">
 			<!-- 검색폼영역 -->
-			<!-- form에 name 필수 -->
 			<form id="search_form" name="search_form" action="board_list.html" class="minisrch_form">
 				<fieldset>
 					<legend>검색</legend>
-					<!-- 이름이 있어야 검색이 된다. 그래야 값을 보낼 수 있다. name 전에 required -->
 					<input name="search_keyword" type="text" class="tbox" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요">
-					<button class="btn_srch" class="btn_srch">검색</button>
+					<button class="btn_srch">검색</button>
 				</fieldset>
 			</form>
 			<!-- //검색폼영역 -->
