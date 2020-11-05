@@ -4,6 +4,20 @@
 - 파이어폭스 개발자도구의 스타일 탭사용
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
+#### 20201105 (목)
+
+- 배열 : 데이터(자료) 표현 방식.
+- 공공데이터처리(빅데이터): Json 데이터로 자료가 전송받고, 전송합니다.
+- Json(제이슨-Java Script Object Notation) 데이터 구조
+  - 키(key속성):밸류(value값) -> 데이터를 가공(파싱)해 화면에 뿌려주는 방식 (RestAPI)
+  - {key1:value1, key2:value2, key3:value3}
+  - var bigData = [
+    {name:'하나약국, maskcnt:200, lan(위도):300, lon(경도):200},
+    {name:'둘약국, maskcnt:100, lan(위도):300, lon(경도):200},
+    {name:'세약국, maskcnt:0, lan(위도):300, lon(경도):200}
+    ];
+  - 파싱하는 과정 : alert(bigData[0]['name']); -> 하나약국
+
 #### 20201104(수)
 
 -input입력 태그: typ[text|text_ppaword]
