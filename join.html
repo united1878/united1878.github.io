@@ -22,12 +22,21 @@
 </style>
 <script>
 $(document).ready(function() {
-	$(".appForm").validate();
+	$(".appForm").validate({
+		rules:{
+			password:"required",
+			password_chk: {
+				equalTo:"#password_lbl"
+			}
+		}
+	});
 	$.extend($.validator.messages, {
 		required: "필수 항목 입니다.",
 		email: "유효하지 않는 Email주소 입니다.",
-		digits: "숫자만 입력 가능합니다."
+		digits: "숫자만 입력 가능합니다.",
+		equalTo:"같은 암호를 입력하시오."
 	});
+	$(".")
 });
 </script>
 </head>
@@ -151,7 +160,7 @@ $(document).ready(function() {
 						<li class="clear">
 							<label for="agree_lbl" class="tit_lbl pilsoo_item">개인정보활용동의</label>
 							<div class="app_content checkbox_area"><input type="checkbox"" name="agree" class="css-checkbox" id="agree_lbl" required checked/>
-							<label for="agree_lbl">동의함</label>
+							<label for="agree_lbl" class="agree">동의함</label>
 							</div>
 						</li>
 					</ul>

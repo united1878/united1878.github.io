@@ -2,7 +2,7 @@
 /* 모바일용 메인상단위치표시영역 */
 .location_area {
   height: 260px;
-  background: url(../img/img_top2.jpg) no-repeat center bottom / cover;
+  background: url(../img/img_top2.jpg) no-repeat center bottom cover;
 }
 .tit_page {
   padding: 140px 0 0 0;
